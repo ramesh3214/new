@@ -1,0 +1,98 @@
+.home1 {
+    background-color:whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.logo {
+    margin-right: auto;
+    color: green;
+    font-size: 1.5rem;
+    height: 5%;
+    width: 7%;
+    margin-bottom: 40px;
+    
+    
+}
+
+.menu-toggle {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+}
+
+.bar1 {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.bar1:hover {
+    width: 25px; /* Adjust size on hover */
+}
+
+.signin {
+    margin-right: 20px;
+    color: green;
+    
+    
+    
+    
+}
+.cart{
+    color: green;
+}
+
+
+.popup-menu  {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: whitesmoke;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+.popup-menu.open {
+    left: 0;
+}
+
+.popup-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 100%;
+}
+
+
+
+.popup-menu li a {
+    color:green;
+    text-decoration: none;
+    margin-left: 20%;
+    font-size: large;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color:green;
+}
+.i{
+    font-size: 1.4rem;
+}
