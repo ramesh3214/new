@@ -23,9 +23,9 @@ function Contact() {
 
   return (
     <>
-      <section id="contact">
-        <h1 className="h-primary center">Contact Us</h1>
-        <div id="contact-box1">
+      <section id="contact1">
+        <h1 className="h-primary center">contact Us</h1>
+        <div id="contact1-box1">
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="name">Name: </label>
@@ -64,7 +64,7 @@ function Contact() {
                 defaultValue={""}
               />
             </div>
-            <button type="submit" className="contact-btn">
+            <button type="submit" className="contact1-btn">
               Submit
             </button>
           </form>

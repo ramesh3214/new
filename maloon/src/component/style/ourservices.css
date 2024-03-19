@@ -45,10 +45,10 @@
     
   }
   .h-primary1{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
   .service1 h2 {
     margin-top: 10px;
@@ -56,22 +56,83 @@
   }
   
 
-.hero {
-    background-color: #f2f2f2;
-    text-align: center;
-    padding: 100px 20px;
-    font-size: 2rem;
-    height: 30vh;
+/* styles.css */
+
+/* Why Choose Us Section */
+/* General styles */
+.why-choose-us {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  height: auto;
 }
 
-.features1 {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background-color: whitesmoke;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.feature1 {
-    text-align: center;
-    margin: 0 20px;
+.why-choose-us h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.reasons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.reason {
+  width: calc(33.3333% - 40px);
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.reason h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+.reason p {
+  margin-top: 10px;
+  color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .reason {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .reason {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 600px) {
+  .reason {
+    width: calc(100% - 40px);
+  }
+}
+
+/* Styles for Galaxy Fold */
+@media (max-width: 280px) {
+  .reason {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .reason {
+    padding: 15px;
+  }
 }

@@ -1,0 +1,53 @@
+/* newsaloon.css */
+
+.newsaloon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f7f9fb;
+  }
+  
+  .newsaloon form {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .newsaloon h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .newsaloon label {
+    font-weight: bold;
+  }
+  
+  .newsaloon input,
+  .newsaloon textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .newsaloon button[type="submit"] {
+    padding: 12px 24px;
+    background-color:green;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .newsaloon button:hover{
+    background-color: black;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .newsaloon form {
+      max-width: 300px;
+    }
+  }
+  

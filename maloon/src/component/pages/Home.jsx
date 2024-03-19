@@ -1,18 +1,25 @@
 import React from "react";
-import img1 from "../image/homeback.jpg"
-import { Link,Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+//import img1 from "../image/homeback.jpg";
 import Footer from "../Footer";
 import Ourservices from "./Ourservices";
-import Carousel from "../Carousel";
+import Carousel from "../Carousel"
 import Coupan from "./Coupan";
+import ForSaloon from "./ForSaloon";
+
+import Hero from './Hero'
+
+
 
 function Home() {
+  
+
   return (
     <>
-    <Coupan/>
+      <Coupan />
 
       <div style={{ position: "relative" }}>
-        <img src={img1} className="img-fluid" alt="Background" style={{ height: "auto", width: "100%" }} />
+      <Hero/>
         <div
           className="content-overlay"
           style={{
@@ -22,15 +29,15 @@ function Home() {
             transform: "translate(-50%, -50%)",
             textAlign: "center",
             color: "#17834F",
-            width: "80%", // Adjusted width for better responsiveness
+            width: "100%", // Adjusted width for better responsiveness
             maxWidth: "600px", // Added max width to avoid stretching on larger screens
             padding: "0 20px", // Added padding for better spacing on smaller screens
           }}
         >
+          
           <section id="home" style={{ textAlign: "center" }}>
-            
-            <a href="./html/saloon-page.html" style={{ display: "inline-block", width: "100%" }}>
-              <Link to="/productlist"><button
+            <Link to= "/productlist">
+              <button
                 className="btn hover:bg-sky-700 ..."
                 style={{
                   fontSize: "18px",
@@ -41,28 +48,26 @@ function Home() {
                   transition: "all 0.3s ease",
                   cursor: "pointer",
                   outline: "none",
-                  width: "50%",
+                  width: "90%",
                   height: "50px",
                   display: "block",
                   maxWidth: "200px",
                   margin: "auto",
-                  marginTop:"10px"
-                  
-                
+                  marginTop: "10px"
                 }}
               >
                 Book now
-              </button></Link>
-            </a>
+              </button>
+            </Link>
           </section>
         </div>
       </div>
-      
+
       <Carousel/>
-      <Ourservices/>
-      <Footer/>
-      <Outlet/>
-      
+      <ForSaloon />
+      <Ourservices />
+
+      <Footer />
     </>
   );
 }

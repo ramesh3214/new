@@ -1,6 +1,7 @@
 import React from "react";
 import './style/footer.css';
 import { Link } from "react-router-dom";
+import img1 from './image/logo2.png'
  function Footer(){
     return(
         <>  
@@ -16,6 +17,11 @@ import { Link } from "react-router-dom";
         <li>
           <Link to='/ProductList'>Service</Link>
         </li>
+        
+        <li>
+        <img src={img1} className='h-14 w-18  mb-9' alt="#" />
+        </li>
+
         
       </ul>
     </div>

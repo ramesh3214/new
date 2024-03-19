@@ -1,64 +1,169 @@
-.container {
-    max-width: 100%;
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  .h-primary {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Container styles */
+  .container {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
-}
-.shop{
-    background-color: white;
-}
-
-
-.section-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: black;
-    margin-top: 6px;
-}
-
-.shop-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.product-box {
-    width: 300px;
-    margin: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    text-align: center;
-    background-color: #333;
-}
-
-.product-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: white;
-}
-
-.product-price {
-    font-weight: 500;
-    margin-bottom: 10px;
-    color: white;
-}
-
-.ad-to-cart {
-    background-color:black;
+  }
+  
+  /* Address styles */
+  .address {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .address p {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .address a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Timing styles */
+  .timing {
+  
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .timing p {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Icon styles */
+  .icon {
+    font-size: 24px;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  /* Product box styles */
+  .product-box1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  .product-box1:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-info {
+    flex: 1;
+  }
+  
+  .product-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .product-description {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .add-to-cart {
+    background-color: green;
     color: #fff;
     border: none;
+    padding: 8px 16px;
     border-radius: 5px;
-    padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-left: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .add-to-cart:hover {
+    background-color: black;
+  }
+
+
+  /* filter option */
+  /* Filter option styling */
+/* Filter option styling for a professional look */
+
+/* Container styling */
+/* Container styling */
+.filter-option {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.ad-to-cart:hover {
-    background-color: green;
-    
+/* Button styling */
+/* Button container styling */
+.filter-option .button-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to create rows */
+  justify-content: center; /* Center align items horizontally */
+  margin-top: 20px; /* Add top margin */
+}
+
+/* Button styling */
+.filter-option button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px 10px 0; /* Add margin between buttons */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  width: calc(33.33% - 20px); /* Set width for three buttons per row */
+}
+
+/* Hover effect */
+.filter-option button:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+/* Active button styling */
+.filter-option button.active {
+  background-color: #007bff; /* Blue */
+}
+
+/* Active button hover effect */
+.filter-option button.active:hover {
+  background-color: #0056b3; /* Darker blue */
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 768px) {
+  .filter-option button {
+    width: calc(100% / 3 - 20px); /* Set width for three buttons per row */
+    max-width: calc(100% / 3 - 20px); /* Set max-width to prevent overflow */
+  }
 }

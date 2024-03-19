@@ -1,0 +1,44 @@
+.background-image-container {
+    position: relative;
+    height: 400px; /* Set the height of the container as per your design */
+    background-image: url('../image/back3.jpg'); /* Replace 'path/to/your/image.jpg' with the actual image path */
+    background-size: cover;
+    background-position: center;
+
+    
+  }
+  
+  .overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .overlay-content h4 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .overlay-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .overlay-content button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: green; /* Adjust button background color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  .overlay-content button:hover {
+    background-color: #0056b3; /* Adjust hover background color */
+  }
+  

@@ -1,98 +1,133 @@
-.home1 {
-    background-color:whitesmoke;
-    text-align: center;
-    padding: 20px;
+/* navbar.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+/* Header styling */
+.home1 {
+    background-color: #f8f9fa; /* Light background color */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    height: 80px; /* Increased height for better visibility */
+}
+
+/* Navigation bar styling */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 40px;
+    height: 100%; /* Use 100% height for full coverage */
 }
 
+/* Logo styling */
 .logo {
-    margin-right: auto;
-    color: green;
-    font-size: 1.5rem;
-    height: 5%;
-    width: 7%;
-    margin-bottom: 40px;
-    
-    
+    width: 50px; /* Adjust logo size as needed */
 }
 
+/* Menu toggle button styling */
 .menu-toggle {
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 20px;
+    height: 25px; /* Increased height for better visibility */
 }
 
-.bar1 {
-    width: 20px;
-    height: 2px;
-    background-color: black;
+.bar1,
+.bar2,
+.bar3 {
+    width: 25px; /* Increased width for better visibility */
+    height: 3px; /* Adjust bar height */
+    background-color: #333; /* Dark color for menu toggle bars */
     transition: 0.3s;
 }
 
-.bar1:hover {
-    width: 25px; /* Adjust size on hover */
+.bar1:hover,
+.bar2:hover,
+.bar3:hover {
+    width: 30px; /* Increase size on hover */
 }
 
-.signin {
-    margin-right: 20px;
-    color: green;
-    
-    
-    
-    
-}
-.cart{
-    color: green;
+/* Font weight for bold text */
+.font-bold {
+    font-weight: bold;
+    color: #333; /* Dark color for bold text */
 }
 
+/* Custom text color */
+.text-customGreen {
+    color: #008000; /* Custom green color */
+}
 
-.popup-menu  {
+/* Popup menu styling */
+.popup-menu {
     position: fixed;
     top: 0;
-    left: -250px;
+    left: -250px; /* Hide the menu initially */
     width: 250px;
     height: 100%;
-    background-color: whitesmoke;
-    padding-top: 60px;
+    background-color: whitesmoke; /* White background for the menu */
+    padding-top: 80px; /* Adjust padding top */
     transition: left 0.3s ease;
     z-index: 999;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
 
 .popup-menu.open {
-    left: 0;
+    left: 0; /* Show the menu when open */
 }
 
 .popup-menu ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    gap: 100%;
 }
-
-
 
 .popup-menu li a {
-    color:green;
+    color: black; /* Dark color for menu links */
     text-decoration: none;
-    margin-left: 20%;
-    font-size: large;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px; /* Adjust padding for better spacing */
+    transition: background-color 0.3s ease;
 }
 
+.popup-menu li a:hover {
+    background-color: #f0f0f0; /* Light background color on hover */
+}
+
+/* Icon styling */
+.popup-menu .icon {
+    margin-right: 10px;
+    font-size: 20px;
+    color: black;
+    
+     /* Custom blue color for icons */
+}
+
+/* Close button styling */
 .close-btn {
     position: absolute;
     top: 20px;
     right: 20px;
     cursor: pointer;
-    color:green;
+    color:black; /* Dark color for close button */
 }
-.i{
-    font-size: 1.4rem;
+
+/* Sign in link styling */
+.signin {
+    margin-left: auto; /* Moves Sign In to the right */
+    color: #008000; /* Custom green color for Sign In */
+    margin-right: 20px; /* Adds a gap between Sign In and Cart */
+}
+
+/* Cart link styling */
+.cart {
+    color: #008000; /* Custom green color for Cart */
 }

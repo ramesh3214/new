@@ -1,0 +1,21 @@
+.carousel-container {
+    max-width: 800px; /* Adjust the maximum width of the carousel */
+    margin-top: 2%; /* Center the carousel horizontally */
+  }
+  
+  .carousel-image {
+    height: 400px; /* Adjust the height of the images */
+    object-fit:cover;
+    width: 100%; /* Maintain aspect ratio and cover the container */
+  }
+  
+  .carousel-inner {
+    height: 300px; /* Same as image height */
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 300px; /* Same as image height */
+    line-height: 300px; /* Center the control icons vertically */
+  }
+  

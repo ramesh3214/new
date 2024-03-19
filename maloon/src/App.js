@@ -9,6 +9,8 @@ import Login from './component/pages/Login';
 import ProductList from './component/Cart/ProductList';
 import About from './component/pages/About';
 import Coupan from './component/pages/Coupan';
+import NewSaloon from './component/pages/NewSaloon';
+
 
 
 
@@ -23,6 +25,7 @@ function App() {
   return (
     <BrowserRouter>
     
+    
     <Routes>
       <Route path="/" element={<Navbar/>}>
         <Route index element={<Home/>} />
@@ -33,6 +36,7 @@ function App() {
         <Route path="about" element={<About/>} />
         <Route path="login" element={<Login/>} />
         <Route path="coupan" element={<Coupan/>} />
+        <Route path="newsaloon" element={<NewSaloon/>} />
         
 
        
